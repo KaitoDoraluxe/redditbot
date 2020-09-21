@@ -4,7 +4,7 @@ This is in CSS language and its for my friends who moderate an Islamic subreddit
 ## STEPS
 1. Add AutoModerator as Mod with full permission
 2. Approve AutoModerator
-3. 
+3. Approve BrozzerAbdullahBot
 
 ### Contains
 1. It has bad language **Removed** it will comment the user that they said bad language 
