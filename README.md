@@ -22,3 +22,8 @@ This is in CSS language and its for my friends who moderate an Islamic subreddit
 7. **MOD MAIL**: If the posts gets 3 reports from users and it will come on modmail/modqueue, Also includes if anything gets 1 reports (which is from BOT) 
 
 8. **LINK SUBMISSION"" Any links outside of imgur.com/reddit.com gets removes to prevent sketchy links
+
+
+### ALERT
+
+most of codes arent mine lol so this credits goes to a Muslim a Brozzer who is also mod of Islamic sub
