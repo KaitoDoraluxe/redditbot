@@ -31,14 +31,13 @@
     modmail: AutoModerator just removed a comment for containing a swear.
 
 ---
-
-type: comment
-    ~author: ["BrozzerAbdullahBot"] #ignore the bot
+    type: comment
+    ~author: ["SalamBot"] #ignore the bot
     body (includes): [ "vagina", "penis", "rape", "paedophilia", "paedophile", "pedophilia", "pedophile", "goat", "warlord",
- "Allah", "Alah", "ﷲ", "Muhammad", "Muhammed", "Mohammad", "Mohammed", "Muhamad", "Mohamed", "Mohamad", "Quran", "Qur'an", "Aisha", "Aysha", "r/exmuslim"]
+ "Allah", "Alah", "ﷲ", "Muhammad", "Muhammed", "Mohammad", "Mohammed", "Muhamad", "Mohamed", "Mohamad", "Quran", "Qur'an", "Aisha", "Aysha", "r/exmuslim", "Islam", "Islamic", "islam", "islamic", "Muslim", "muslim", "Muslims", "muslims"]
     ~body (includes): ["masha'Allah", "mashAllah", "mashaallah", "subhanAllah", "SubhanaAllah",
     "subhanalah", "subhan'Allah", "alhamdulillah", "alhamdulilah", "jazakAllah", "jazakAllahkhair",
-    "jazakAllahukhairun", "jazak'Allah", "Allahuakbar", "Allahu", "masyallah", "inshallah", "insha'Allah", "inshaAllah", "-quran", "takbir", "tekbir", "Mahdi", "mahdi"]
+    "jazakAllahukhairun", "jazak'Allah", "Allahuakbar", "Allahu", "masyallah", "inshallah", "insha'Allah", "inshaAllah", "-quran"]
     action: report
     report_reason: "Potentially bad phrase - {{match}}"
 
