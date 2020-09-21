@@ -1,0 +1,127 @@
+
+    # Send an alert to modmail if anything gets a report
+    reports: 1
+    modmail: The above item has received a report, please investigate.
+
+---
+
+    # Anything that gets 3+ reports, send modmail
+    reports: 3
+    modmail: The above item has 3+ reports. Please verify that this is still appropriate.
+
+---
+
+    # Forbidden phrases
+    body+title (includes): [ "fuck", "shit", "dick", "nigger", "nigga", "shitty", "shithole", "apeshit", "bitch",  "slut", "whore", "asshole", "arsehole", "titties", "pussy", "faggot", "f*ck", "badass", "cuck", "sh*t", "d*ck", "n*gger", "bastard", "smartass", "damn", "retard", "dumbass"]
+    ~body (includes): ["okbrozzerretard"]
+    action: remove
+    comment: |
+
+            Your post contains a forbidden word. Please avoid swears in your posts. 
+    modmail: AutoModerator just removed a comment for containing a swear.
+
+---
+   
+    #Forbidden words
+    body+title (includes-word): ["ass", "tits", "cock", "twat", "asses", "asshat", "badass", "cunt"]
+    action: remove
+    comment: |
+
+            Your post contains a forbidden word. Please avoid swears in your posts. 
+    modmail: AutoModerator just removed a comment for containing a swear.
+
+---
+
+type: comment
+    ~author: ["BrozzerAbdullahBot"] #ignore the bot
+    body (includes): [ "vagina", "penis", "rape", "paedophilia", "paedophile", "pedophilia", "pedophile", "goat", "warlord",
+ "Allah", "Alah", "ﷲ", "Muhammad", "Muhammed", "Mohammad", "Mohammed", "Muhamad", "Mohamed", "Mohamad", "Quran", "Qur'an", "Aisha", "Aysha", "r/exmuslim"]
+    ~body (includes): ["masha'Allah", "mashAllah", "mashaallah", "subhanAllah", "SubhanaAllah",
+    "subhanalah", "subhan'Allah", "alhamdulillah", "alhamdulilah", "jazakAllah", "jazakAllahkhair",
+    "jazakAllahukhairun", "jazak'Allah", "Allahuakbar", "Allahu", "masyallah", "inshallah", "insha'Allah", "inshaAllah", "-quran", "takbir", "tekbir", "Mahdi", "mahdi"]
+    action: report
+    report_reason: "Potentially bad phrase - {{match}}"
+
+---
+
+# filter text posts with external links
+    type: submission
+    body (includes): "http"
+    ~body (includes): [imgur.com, reddit.com, youtube.com]  # whitelist
+    action: remove
+    comment: Links outside of reddit and imgur are automatically removed. If you think this is a mistake, please message the moderators. (This is still in testing phase so be patient if it's not working as intended)
+    modmail: Removed a text post for linking outside whitelisted domains v1 - v1 checks whether the body or title includes HTTP
+---
+
+#Remove submission from a user with account less than 2 days old.
+type: submission
+author:
+    account_age: < 48 hours
+    satisfy_any_threshold: true
+action: remove
+#message: |
+    #Sorry, it appears the user who submitted this post is a new account. The submission has been removed. 
+    #Please post once the account is no longer a new account.
+modmail: Removed a submission because user profile was too young
+
+---
+
+#Remove comment from a user with account less than 2 days old.
+type: comment
+author:
+    account_age: < 48 hours
+    satisfy_any_threshold: true
+action: remove
+#message: |
+    #Sorry, this comment has been removed since it appears the user who commented this is a new account. 
+    #Please comment once the account is no longer a new account.
+modmail: Removed a comment because user profile was too young
+
+---
+
+#Remove link submission from a user who has less than 15 comment karma
+type: link submission
+author:
+    comment_karma: < 15
+action: remove
+#message: |
+    #This submission has been removed as the user does not have enough comment karma to post. 
+    #Please submit a post once you have more comment karma. 
+modmail: Removed a link submission because user has less than 15 comment karma
+
+---
+
+#Remove post submission from a user who has less than 25 combined karma
+type: submission
+author:
+    combined_karma: < 25
+action: remove
+#message: This submission has been removed as the user does not have enough karma to post. Please post once you have earned more karma. 
+modmail: Removed a post-submission because user has less than 25 karma
+
+---
+author:     
+    ~flair_css_class (regex): ".+"         
+    #set_flair: ["Newbies","black"]
+    #following is a test, makes new flair different colour
+    set_flair: 
+        template_id: USER_FLAIR_ID
+
+---
+    # Set accounts under a week old with "Newbies" flair
+    type: any
+    author:
+        flair_css_class (regex): "^$"
+        flair_text (regex): "^$"
+        account_age: "< 7 days"
+        set_flair: ["Newbies", "new"]
+---
+    #8 Remove "Newbies" flair after account matures past 7 days
+    type: any
+    author:
+        flair_css_class: "new"
+        account_age:  "> 7 days"
+        set_flair: ["", ""]
+        overwrite_flair: true
+
+---
