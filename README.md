@@ -1,5 +1,5 @@
 # redditmuslimbot
-This is in CSS language and its for my friends who moderate an Islamic subreddit, its in private
+This is in CSS language and its for those who moderate an Islamic subreddit.
 
 ## STEPS
 1. Add AutoModerator as Mod with full permission
@@ -21,9 +21,12 @@ This is in CSS language and its for my friends who moderate an Islamic subreddit
 
 7. **MOD MAIL**: If the posts gets 3 reports from users and it will come on modmail/modqueue, Also includes if anything gets 1 reports (which is from BOT) 
 
-8. **LINK SUBMISSION"" Any links outside of imgur.com/reddit.com gets removes to prevent sketchy links
+8. **LINK SUBMISSION** Any links outside of imgur.com/reddit.com gets removes to prevent sketchy links
+
+### NOTICE
+About the recieving reports from 3 users, you can change to **The above {{kind}} by /u/{{author}} has received 3 reports. Please investigate.**
 
 
 ### ALERT
 
-most of codes arent mine lol so this credits goes to a Muslim a Brozzer who is also mod of Islamic sub
+most of codes arent mine lol so this credits goes to some brothers who is also mod of Islamic sub
