@@ -24,7 +24,9 @@ This is in CSS language and its for those who moderate an Islamic subreddit.
 8. **LINK SUBMISSION** Any links outside of imgur.com/reddit.com gets removes to prevent sketchy links
 
 ### NOTICE
-About the recieving reports from 3 users, you can change to **The above {{kind}} by /u/{{author}} has received 3 reports. Please investigate.**
+1. About the recieving reports from 3 users, you can change to **The above {{kind}} by /u/{{author}} has received 3 reports. Please investigate.** however you want
+2. You can change comment_karma/combined_karma limits, account_age limits depending on your subreddit popularity.
+3. 3 reports is recommedation, you can also change that  
 
 
 ### ALERT
