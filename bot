@@ -1,5 +1,5 @@
 
-    # Send an alert to modmail if anything gets a report
+    # AutoModerator Sends an alert to modmail if anything gets a report
     reports: 1
     modmail: The above item has received a report, please investigate.
 
