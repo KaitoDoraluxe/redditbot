@@ -1,10 +1,12 @@
-# redditmuslimbot
-This is in CSS language and its for those who moderate an Islamic subreddit.
+# redditbot
+This is in CSS language and its for those who moderate an Islamic/not Islamic subreddit.
+
+You can see Source Folder to add any whichever you like or you can copy all of codes in all_codes
 
 ## STEPS
 1. Add AutoModerator as Mod with full permission
 2. Approve AutoModerator
-3. Approve BrozzerAbdullahBot
+3. Approve BrozzerAbdullahBot (if you mod a Islamic Subreddit)
 
 ### Contains
 1. It has bad language **Removed** it will comment the user that they said bad language 
