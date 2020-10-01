@@ -1,0 +1,12 @@
+#Remove submission from a user with account less than 2 days old.
+type: submission
+author:
+    account_age: < 48 hours
+    satisfy_any_threshold: true
+action: remove
+#message: |
+    #Sorry, it appears the user who submitted this post is a new account. The submission has been removed. 
+    #Please post once the account is no longer a new account.
+modmail: Removed a submission because user profile was too young
+
+---
