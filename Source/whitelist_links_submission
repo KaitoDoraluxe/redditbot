@@ -1,0 +1,8 @@
+# filter text posts with external links
+    type: submission
+    body (includes): "http"
+    ~body (includes): [imgur.com, reddit.com, youtube.com]  # whitelist
+    action: remove
+    comment: Links outside of reddit and imgur are automatically removed. If you think this is a mistake, please message the moderators. (This is still in testing phase so be patient if it's not working as intended)
+    modmail: Removed a text post for linking outside whitelisted domains v1 - v1 checks whether the body or title includes HTTP
+---
