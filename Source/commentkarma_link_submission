@@ -1,0 +1,11 @@
+#Remove link submission from a user who has less than 15 comment karma
+type: link submission
+author:
+    comment_karma: < 15
+action: remove
+#message: |
+    #This submission has been removed as the user does not have enough comment karma to post. 
+    #Please submit a post once you have more comment karma. 
+modmail: Removed a link submission because user has less than 15 comment karma
+
+---
