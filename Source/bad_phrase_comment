@@ -1,0 +1,7 @@
+type: comment
+    ~author: ["AutoModerator"] #ignore the bot
+    body (includes): [ "test, testing"]
+    action: report
+    report_reason: "Potentially bad phrase - {{match}}"
+
+---
