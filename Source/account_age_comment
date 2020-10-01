@@ -1,0 +1,12 @@
+#Remove comment from a user with account less than 2 days old.
+type: comment
+author:
+    account_age: < 48 hours
+    satisfy_any_threshold: true
+action: remove
+#message: |
+    #Sorry, this comment has been removed since it appears the user who commented this is a new account. 
+    #Please comment once the account is no longer a new account.
+modmail: Removed a comment because user profile was too young
+
+---
