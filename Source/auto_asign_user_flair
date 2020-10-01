@@ -1,0 +1,25 @@
+author:     
+    ~flair_css_class (regex): ".+"         
+    #set_flair: ["Newbies","black"]
+    #following is a test, makes new flair different colour
+    set_flair: 
+        template_id: USER_FLAIR_ID
+
+---
+    # Set accounts under a week old with "Newbies" flair
+    type: any
+    author:
+        flair_css_class (regex): "^$"
+        flair_text (regex): "^$"
+        account_age: "< 7 days"
+        set_flair: ["Newbies", "new"]
+---
+    #8 Remove "Newbies" flair after account matures past 7 days
+    type: any
+    author:
+        flair_css_class: "new"
+        account_age:  "> 7 days"
+        set_flair: ["", ""]
+        overwrite_flair: true
+
+---
