@@ -1,0 +1,9 @@
+ #Forbidden words
+    body+title (includes-word): ["ass", "tits", "cock", "twat", "asses", "asshat", "badass", "cunt"]
+    action: remove
+    comment: |
+
+            Your post contains a forbidden word. Please avoid swears in your posts. 
+    modmail: AutoModerator just removed a comment for containing a swear.
+
+---
