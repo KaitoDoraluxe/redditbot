@@ -108,6 +108,9 @@ action_reason: 'A phrase was caught in the insult filter: "{{match}}".'
 title+body (regex): ['ban\W?(me|you)','shut\W?the\s*fuck\W?up','fuck\W?((yo)?ursel(f|ves))','(mother)?fucking\s*(idiots?|bitche?s?|morons?|dicks?|whores?)','(yo)?u(r|''re)?\s*dumb(fuck)?','f[#u]+ck\s*is\s*wrong','you(r|''re)?\W?(a|an)?\W?(fucking)?\W?((dumb)?ass\W?(wipes?|munch|clowns?|holes?)|idiot)','insulti?n?g\W?(you|my|me|your)','(yo)?u''?r?e?\W?(fuck(ing)?)?\W?retard(ed)?','suck\W?my','cuck(ing)?','fuck off','fucking?\W?weebs?','you\s+.*\s+twat','shitmod','toxic','accusing me','question(ing)? (yo)?ur intelligence', 'nig(s|z|ga|gas|gaz|gerz|ger|gers|lets|glets|r)','beaner(s|z)','spick(s|z)','fag(got|s|z|gots|gotz)','wetback(s)','gook(s)', 'honk(ey|ie)', 'kike(s|z)', 'puss(y|ies)', 'cunt(s|z)', 'whore(s|z)', 'cuck(s|z)', 'shill(s|z)', 'nigga(s|z)', 'shill(s|z)', 'cuck(s|z)', 'gay(s|z)', 'douchebag(s|z)', 'autis(m|t|ts|tic)', 'retard(s|z|ed)', 'cock(s|z)', 'sjw(s|z)']
 action: filter
 action_reason: "Fightin' words  - {{match}}"
+
+---
+
 author:     
     ~flair_css_class (regex): ".+"         
     #set_flair: ["Newbies","black"]
