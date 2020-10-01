@@ -1,0 +1,7 @@
+# A script to catch arguements
+
+body+title (includes-word, regex): ['k(ill (yo)?ursel[fv](e?s)?|ys)', 'fuck (yo)?u(rsel[fv](e?s)?)?', 's(hut the fuck up|tfu)', '((s[a4]nd)?k?n[il1]gg?g?([e3][e3]?r|l[e3]t(te?)?)|sh[il1]t[- ]?sk[i1]n(n[e3]d)?|(f|ph)[a4]gg?g?([o0]t)?|[a4]ut[il1]s(t([il1]c)|m)?|ch[il1y]nc?k|[dk]h?[yil1]k[e3]|g[o0](llyw[o0]g|[o0]k)|j[e3]w|n[a4]z[il1]|r[e3]t[a4]rd([e3]d)?|qu[e3][e3][e3]?r)', '(yo)?u(''r|r| ar)e( (all|both))?( just)?( s(uch|o))?( an?)? ((?#ADJ_START)((idiot|moron)(ic)?|spastic|stupid|shit(ty)?|(mother)?fuckin[g'']?|fat|gay|dumb)([- ]?ass)?(?#ADJ_END)|(?#NOUN_START)(ass([- ]?h(ole|at))?|bell([- ]?end)?|cho(ad|de)|cu(nt|ck)|((((d|pr)i|co)ck|k?nob)([- ]?(jocke?y|((s|f)u|li)cker))?)|(mother)?fucker|bit?ch|douche|flange|idiot|moron)(?#NOUN_END)s?)', 'Get (Leukemia|AIDS|HIV|Ebola|Cancer)', 'hope you die', 'kys', 'Go (run|step|jump|play|die) in traffic', '(Kill|Hang) (yo)urself']
+action: filter
+action_reason: 'A phrase was caught in the insult filter: "{{match}}".'
+
+---
