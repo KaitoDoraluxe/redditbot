@@ -1,0 +1,5 @@
+# Anything that gets 3+ reports, send modmail
+    reports: 3
+    modmail: The above item has 3+ reports. Please verify that this is still appropriate.
+
+---
