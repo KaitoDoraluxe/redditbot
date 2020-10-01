@@ -1,0 +1,9 @@
+#Remove post submission from a user who has less than 25 combined karma
+type: submission
+author:
+    combined_karma: < 25
+action: remove
+#message: This submission has been removed as the user does not have enough karma to post. Please post once you have earned more karma. 
+modmail: Removed a post-submission because user has less than 25 karma
+
+---
