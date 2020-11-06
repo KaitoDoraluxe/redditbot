@@ -1,0 +1,9 @@
+---
+#PM the user who submits item
+
+type: submission
+message_subject: "your custom subject"
+message: |
+
+    [your message]
+---
