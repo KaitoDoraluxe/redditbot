@@ -1,3 +1,19 @@
+---
+#PM the user who submits item
+
+type: submission
+message_subject: "your custom subject"
+message: |
+
+    [your message]
+
+---
+
+#Comment sticky on new post 
+type: submission
+comment: [your message]
+comment_stickied: true
+---
 
     # AutoModerator Sends an alert to modmail if anything gets a report
     reports: 1
