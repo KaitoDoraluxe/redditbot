@@ -1,0 +1,7 @@
+---
+
+#Comment sticky on new post 
+type: submission
+comment: [your message]
+comment_stickied: true
+---
