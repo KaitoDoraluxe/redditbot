@@ -1,4 +1,9 @@
 ---
+# BLOCKED the users from submitting 
+type: submission   (you can put link submission or comment)
+author: [""]
+action: remove
+---
 # Required word at the beginning of the title 
 
 type: submission
