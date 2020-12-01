@@ -1,4 +1,39 @@
 ---
+# Required word at the beginning of the title 
+
+type: submission
+flair_text  (includes): ["Your_Flair_Name"]
+~title (starts-with): [')', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+action: remove
+comment: your comment here (if you want to add this than)
+message_subject: "Your Removal Reason"
+message: | 
+    
+    Your message here
+
+---
+# Required word at the end of the title 
+
+type: submission
+flair_text  (includes): ["Your_Flair_Name"]
+~title (ends-with): [')', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+action: remove
+comment: your comment here (if you want to add this than)
+message_subject: "Your Removal Reason"
+message: | 
+    
+    Your message here
+
+
+
+---
+type: submission
+flair_text  (includes): ["Flair_Name"]
+message_subject: "Your subject"
+message: |
+
+    Your Message here
+---
 #PM the user who submits item
 
 type: submission
@@ -34,7 +69,7 @@ comment_stickied: true
     comment: |
 
             Your post contains a forbidden word. Please avoid swears in your posts. 
-    modmail: AutoModerator just removed a comment for containing a swear.
+    modmail: AutoModerator just removed a comment for containing a swear. {{author}} keyword - {{match}}
 
 ---
    
@@ -44,7 +79,7 @@ comment_stickied: true
     comment: |
 
             Your post contains a forbidden word. Please avoid swears in your posts. 
-    modmail: AutoModerator just removed a comment for containing a swear.
+    modmail: AutoModerator just removed a comment for containing a swear. {{author}} keyword - {{match}}
 
 ---
     type: comment
