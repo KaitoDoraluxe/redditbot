@@ -1,4 +1,10 @@
 ---
+# filter text posts with external links
+    type: comment
+    body (includes-word): [discord.gg] # sus list links
+    action: remove
+    modmail: A Discord Server link has been removed. Please check confirm if this is fine. keyword - {{match}}   
+---
 # BLOCKED the users from submitting 
 type: submission   (you can put link submission or comment)
 author: [""]
