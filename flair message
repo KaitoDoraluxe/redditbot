@@ -1,0 +1,37 @@
+---
+
+# Flair when automod sends removal message
+body: ['1. **Be Civil:**']
+author:
+  set_flair:
+    template_id: d624c4fe-ee22-11e8-b222-0e46018c516a
+---
+body: ['2. **All Posts Must Be Islam Related:**']
+author:
+  set_flair:
+    template_id: dbafa9e8-ee22-11e8-9c1c-0e853967acce
+---
+body: ['3. **No Reposts:**']
+author:
+  set_flair:
+    template_id: e419d61a-fdc4-11e8-884c-0efbf220a0c2
+---
+body: ['4. **No Screenshots from MEMRI TV:**']
+author:
+  set_flair:
+    template_id: f23ada1e-fdc4-11e8-a789-0e89b8fb8a96
+ ---
+body: ['5. **NO NSFW Content:**']
+author:
+  set_flair:
+    template_id: c8d939e6-785c-11e9-ab1a-0edb262c9f76
+---
+body: ['6. **No Shia/Sunni/other hate:**']
+author:
+  set_flair:
+    template_id: ecbaa714-785c-11e9-96a8-0e378815005a
+---
+body: ['7. **No Blasphemy:**']
+author:
+  set_flair:
+    template_id: f9eb0456-785c-11e9-889f-0eb296377170 
